@@ -7,8 +7,8 @@ client.on('ready', () => {
 
 client.on('message', msg => {
   if (msg.content === 'ping') {
-    msg.reply('Pong!');
+    msg.channel.send('Pong!');
   }
 });
 
-client.login('token');
+client.login('NzU1NTE4NjQ0Mjk2ODc2MTAz.X2EdkQ.-lxpLSMzDuvE822Nx5sKh9m-cPk');
