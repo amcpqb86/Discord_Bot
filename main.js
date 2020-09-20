@@ -1,4 +1,5 @@
 const {Client} = require('discord.js');
+const {TOKEN, PREFIX} = require ('./config');
 const client = new Client();
 
 client.on('ready', () => {
@@ -6,9 +7,9 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-  if (msg.content === '§salut') {
+  if (msg.content === `${PREFIX}salut`) {
     msg.channel.send('Je suis le bot !');
   }
 });
 
-client.login('NzU1NTE4NjQ0Mjk2ODc2MTAz.X2EdkQ.wvWRIW95Yaz7MhC-p7jcMRw_CN8');
+client.login(TOKEN);
